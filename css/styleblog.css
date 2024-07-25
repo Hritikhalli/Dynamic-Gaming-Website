@@ -1,0 +1,404 @@
+body {
+    font-family: 'helvetica', 'sans-serif';
+    margin: 0;
+}
+
+/* start: global style rules */
+h1, h2, h3, h4, h5 {
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, label, strong {
+    line-height: 2;
+    font-size: 0.85em;
+    font-weight: 300;
+}
+
+.flex {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+.badge {
+    padding: 9px 20px;
+    color: #eee;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.badge.new {
+    background-color: #FF205F;
+}
+
+.badge.strategy {
+    background-color: #4EAE60;
+}
+
+.badge.racing {
+    background-color: #694EAE;
+}
+
+.badge.rpg,
+.badge.adventure {
+    background-color: #40ABF5;
+}
+
+.badge.tournaments {
+    background-color: #FB6E10;
+}
+
+.badge.premium-tournament {
+    background-color: #FFB320;
+    color: #252525;
+}
+
+.shade {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+/* end: global style rules */
+
+/* start: header styles */
+header {
+    background-color: #131313;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid #FFB320;
+}
+
+.hamburger-menu {
+    background-color: transparent;
+    border: 1px solid #FFB320;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-menu .strip {
+    display: block;
+    height: 1px;
+    background-color: #FFB320;
+    margin: 4px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 18px;
+}
+
+nav ul li a {
+    color: #eee;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #FFB320;
+}
+
+#login-register-button {
+    background-color: #FFB320;
+    color: #131313;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+#latest-news {
+    margin-bottom: 75px;
+}
+
+#latest-news .flex {
+    justify-content: flex-start;
+    max-width: 100%;
+    padding: 0;
+}
+
+#latest-news .flex h5 {
+    flex-basis: 25%;
+    background-color: #FFB320;
+    padding: 25px;
+    margin: 0;
+    text-align: right;
+    color: #eee;
+    font-size: 1.2em;
+}
+
+#latest-news-container {
+    background-color: #131313;
+    position: relative;
+    flex-basis: 75%;
+    padding: 25px;
+    
+}
+
+#latest-news-container .badge {
+    margin-right: 20px;
+}
+
+#latest-news-container .latest-news-text {
+    color: #eee;
+}
+
+#blog1 .b1{
+    display: flex;
+}
+
+#blog1 .container{
+    flex: 0 0 60%;
+    padding: 20px;
+}
+
+#blog1 .post{
+    width: 300px;
+    padding: 10px;
+    position: relative;
+    float: right;
+}
+
+#blog1 .category-tag{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+
+#blog1 img{
+    width: 100%;
+    height: auto;
+}
+
+#blog1 .comments{
+    color: gray;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#blog1 .like{
+    cursor: pointer;
+    user-select: none;
+}
+
+#blog1 .slidebar{
+    flex: 0 0 40%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-widget input {
+    width: 100%;
+    height: 41px;
+    border: 1px solid #d6dee7;
+    padding-left: 22px;
+    padding-right: 45px;
+    font-size: 12px;
+    margin-bottom: 73px;
+}
+
+.search-widget button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: none;
+    border: none;
+    padding-right: 15px;
+    color: #878787;
+    cursor: pointer;
+}
+
+button, input {
+    overflow: visible;
+}
+
+#blog1 .latest-post{
+    background: #eee ;
+    padding: 10px;
+    margin-bottom: 73px;
+}
+
+#blog1 .posts-comments-box {
+    flex-basis: 100%;
+    background-color: #252525;
+    padding: 20px 20px 25px;
+    border: 1px solid #4a4a4a;
+}
+
+#blog1 .posts-comments-box h3 {
+    color: #eee;
+}
+
+#blog1 .post-item {
+    margin-bottom: 73px;
+    margin-top: 25px;
+}
+
+#blog1 .post-item:first-child {
+    margin-top: 0;
+}
+
+#blog1 .post-item:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#blog1 .post-item img {
+    float: left;
+    width: 30%;
+}
+
+#blog1 .post-item > div {
+    float: left;
+    margin-left: 5%;
+    width: 65%;
+}
+
+#blog1 .post-item > div h5 {
+    color: #FFB320;
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+#blog1 .post-item > div p {
+    color: #eee;
+    margin: 5px 0;
+    font-size: 0.8em;
+}
+
+#blog1 .post-item > div small {
+    color: #999;
+    font-size: 0.75em;
+}
+
+#blog1 .comments-item {
+    margin-top: 1em;
+}
+
+#blog1 .comments-item:first-child {
+    margin-top: 0;
+}
+
+#blog1 .comments-item:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#blog1 .comments-item img {
+    width: 20%;
+    height: auto;
+    border-radius: 20%;
+    float: left;
+}
+
+#blog1 .comments-item > div {
+    float: left;
+    margin-left: 7%;
+    width: 70%;
+}
+
+#blog1 .comments-item > div p {
+    color: #eee;
+    font-size: 0.8em;
+    margin: 0 0 5px;
+}
+
+#blog1 .comments-item > div p span {
+    color: #999;
+}
+
+#blog1 .comments-item > div p span.author {
+    color: #E92159;
+}
+
+#blog1 .comments-item > div h5 {
+    color: #FFB320;
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #252525;
+    padding: 25px 0 20px;
+}
+
+footer small {
+    color: #ddd;
+    font-size: 0.9em;
+}
+
+footer small .footer-heart {
+    font-size: 16px;
+}
+
+footer small a {
+    color: #007BDC;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+footer ul li a {
+    color: #ddd;
+    font-size: 0.8em;
+}
