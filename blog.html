@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gaming Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styleblog.css" rel="Stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="flex">
+            <div class="logo">
+                <a href="h1.html"><img src="logo2.jpeg" width=140 alt="Game Warrior Logo" /></a>
+            </div>
+            <nav>
+                <button id="nav-toggle" class="hamburger-menu">
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                </button>
+                <ul id="nav-menu-container">
+                    <li><a href="h1.html">Home</a></li>
+                    <li><a href="game.html">Games</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" id="login-register-button">Login / Register</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="latest-news">
+            <div class="flex">
+                <h5>Latest News</h5>
+                <div id="latest-news-container">
+                    <div class="latest-news-item">
+                        <spam class="badge news">New</spam>
+                        <spam class="latest-news-text">Anytext</spam>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog1">
+            <div class="b1">
+                <div class="container">
+                    <div class="post">
+                        <div class="category-tag">Racing</div>
+                        <img src="blogimg/Horizon.jpg" alt="Racing" />
+                        <h3>Horizon Zero Dawn</h3>
+                        <p> A skilled hunter named Aloy explores a post-apocalyptic world overrun by robotic machines in
+                            this open-world action RPG.</p>
+                        <div class="comments">3 comments</div>
+                        <div class="like" onclick="togglelike(this)">❤</div>
+                    </div>
+                    <div class="post">
+                        <div class="category-tag">RPG</div>
+                        <img src="blogimg/cyberpunk.jpg" alt=" RPG" />
+                        <h3>Cyberpunk 2077</h3>
+                        <p>Immerse yourself in a neon-drenched, dystopian future metropolis as a customizable mercenary
+                            in this open-world action RPG.</p>
+                        <div class="comments">3 comments</div>
+                        <div class="like" onclick="togglelike(this)">❤</div>
+                    </div>
+                    <div class="post">
+                        <div class="category-tag">Action</div>
+                        <img src="blogimg/wwe.jpg" alt="Action Game" />
+                        <h3>WWE 2K23</h3>
+                        <p>Step into the squared circle and body slam your favorite superstar or create your own
+                            wrestling legend in this latest edition of the WWE 2K.</p>
+                        <div class="comments">3 comments</div>
+                        <div class="like" onclick="togglelike(this)">❤</div>
+                    </div>
+                    <div class="post">
+                        <div class="category-tag">RPG</div>
+                        <img src="blogimg/lilith_hd_diablo_4.jpg" alt="RPG" />
+                        <h3>Diablo 4</h3>
+                        <p>Gear up and descend into the burning depths of hell to battle demons and hordes of undead in
+                            this action RPG sequel.</p>
+                        <div class="comments">3 comments</div>
+                        <div class="like" onclick="togglelike(this)">❤</div>
+                    </div>
+                    <div class="post">
+                        <div class="category-tag">Action</div>
+                        <img src="blogimg/mortal kombat.jpg" alt="Action Game" />
+                        <h3>Mortal Kombat</h3>
+                        <p>The legendary fighting tournament returns with a new gruesome chapter, featuring iconic
+                            warriors and brutal fatalities.</p>
+                        <div class="comments">3 comments</div>
+                        <div class="like" onclick="togglelike(this)">❤</div>
+                    </div>
+                    <div class="post">
+                        <div class="category-tag">Action</div>
+                        <img src="blogimg/metal_gear_solid_delta.jpg" alt="Action Game" />
+                        <h3>Metal Gear Solid</h3>
+                        <p>Espionage, action, and tactical planning collide in this legendary stealth-action series, following Solid Snake on a mission to neutralize global threats.</p>
+                        <div class="comments">3 comments</div>
+                        <div class="like" onclick="togglelike(this)">❤</div>
+                    </div>
+                    <div class="post">
+                        <div class="category-tag">Adventure</div>
+                        <img src="blogimg/sackboy.jpg" alt="Adventure Game" />
+                        <h3>Sackboy: A Big Adventure</h3>
+                        <p>Play as the adorable knitted hero Sackboy as he leaps, stitches, and swings his way through a charming and colorful 3D platforming adventure.</p>
+                        <div class="comments">3 comments</div>
+                        <div class="like" onclick="togglelike(this)">❤</div>
+                    </div>
+                    <div class="post">
+                        <div class="category-tag">Shootinh</div>
+                        <img src="blogimg/kiriko_hd_overwatch_4.jpg" alt="Shooting Game" />
+                        <h3>Overwatch 2</h3>
+                        <p>Assemble your team of heroes once again in this sequel to the popular team-based shooter, battling for victory on a global scale.</p>
+                        <div class="comments">3 comments</div>
+                        <div class="like" onclick="togglelike(this)">❤</div>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <form class="search-widget">
+                        <input type="text" placeholder="Search">
+                        <button>
+                            <i class="fa fa-search">
+                            </i>
+                        </button>
+                    </form>
+                    <h4>Latest Post</h4>
+                    <div class="post-item">
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/latest_posts_1.jpg" />
+                        <div>
+                            <h5>Jan 21, 2024</h5>
+                            <p>Comments.</p>
+                            <small>By: Admin</small>
+                        </div>
+                    </div>
+
+                    <div class="post-item">
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/latest_posts_2.jpg" />
+                        <div>
+                            <h5>Feb 2, 2024</h5>
+                            <p>Comments.</p>
+                            <small>By: Admin</small>
+                        </div>
+                    </div>
+
+                    <div class="post-item">
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/latest_posts_3.jpg" />
+                        <div>
+                            <h5>March 12, 2024</h5>
+                            <p>Comments.</p>
+                            <small>By: Admin</small>
+                        </div>
+                    </div>
+
+
+                    <div class="posts-comments-box">
+                        <h3>Top Comments</h3>
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_1.jpg" />
+                            <div>
+                                <p><span class="author">Tanmay Jagtap</span> <span>on</span> Valorant.</p>
+                                <h5>Jan 01, 2024</h5>
+                            </div>
+                        </div>
+
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_2.jpg" />
+                            <div>
+                                <p><span class="author">Mahesh Dargad</span> <span>on</span> Overwatch.</p>
+                                <h5>Dec 11, 2023</h5>
+                            </div>
+                        </div>
+
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_3.jpg" />
+                            <div>
+                                <p><span class="author">Om Kodre</span> <span>on</span> grand Theft Auto.</p>
+                                <h5>Jan 19, 2024</h5>
+                            </div>
+                        </div>
+
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_4.jpg" />
+                            <div>
+                                <p><span class="author">Pranav Kaple</span> <span>on</span> Apex Legend.</p>
+                                <h5>Feb 27, 2024</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="flex">
+            <small>Copyright &copy; 2023 All rights reserved | </small>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">Games</a>
+                </li>
+
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+
+                <li>
+                    <a href="#">Forums</a>
+                </li>
+
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="scriptsblog.js">
+        document.getElementById('nav-toggle').addEventListener('click', function () {
+            let navMenu = document.getElementById('nav-menu-container');
+            navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+        });
+    </script>
+</body>
+
+</html>

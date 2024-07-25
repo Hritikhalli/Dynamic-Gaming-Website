@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="flex">
+      <div class="logo">
+        <a href="h1.html"><img src="logo2.jpeg" width=140 alt="Game Warrior Logo" /></a>
+      </div>
+      <nav>
+        <button id="nav-toggle" class="hamburger-menu">
+          <span class="strip"></span>
+          <span class="strip"></span>
+          <span class="strip"></span>
+        </button>
+        <ul id="nav-menu-container">
+          <li><a href="h1.html">Home</a></li>
+          <li><a href="game.html">Games</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#" id="login-register-button">Login / Register</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="latest-news">
+      <div class="flex">
+        <h5>Latest News</h5>
+        <div id="latest-news-container">
+          <div class="latest-news-item">
+            <spam class="badge news">New</spam>
+            <spam class="latest-news-text">Anytext</spam>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hero-image">
+
+      <div class="hero-marketing-text" id="slide1" style="display:flexbox;">
+        <h1>The Best <span>Games</span> Out There</h1>
+        <h5> </h5>
+        <button>Read More</button>
+      </div>
+
+    </section>
+
+    <!-- <section class="game-reviews">
+            <div class="game-review">
+              <span class="game-score">9.3</span>
+              <img class="game-image" src="overwatch1.jpg" alt="Overwatch Halloween">
+              <h3 class="game-title">Overwatch Halloween</h3>
+              <div class="game-rating">
+                &#9733; &#9733; &#9733; &#9733; &#9733;
+              </div>
+              <p class="game-description">
+                Game Description.
+              </p>
+            </div>
+            <div class="game-review">
+              <span class="game-score">9.1</span>
+              <img class="game-image" src="gta5poster.jpg" alt="Grand Theft Auto">
+              <h3 class="game-title">Grand Theft Auto</h3>
+              <div class="game-rating">
+                &#9733; &#9733; &#9733; &#9733; &#9733;
+              </div>
+              <p class="game-description">
+                Game Description.
+              </p>
+            </div>
+            <div class="game-review">
+                <span class="game-score">9.5</span>
+                <img class="game-image" src="gta5poster.jpg" alt="Grand Theft Auto">
+                <h3 class="game-title">Grand Theft Auto</h3>
+                <div class="game-rating">
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div>
+                <p class="game-description">
+                  Game Description.
+                </p>
+              </div>
+            </section>
+            <section class="game-reviews">
+
+              <div class="game-review">
+                <span class="game-score">8.9</span>
+                <img class="game-image" src="overwatch1.jpg" alt="Overwatch Halloween">
+                <h3 class="game-title">Overwatch Halloween</h3>
+                <div class="game-rating">
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div>
+                <p class="game-description">
+                  Game Description.
+                </p>
+              </div>
+              <div class="game-review">
+                <span class="game-score">9.0</span>
+                <img class="game-image" src="gta5poster.jpg" alt="Grand Theft Auto">
+                <h3 class="game-title">Grand Theft Auto</h3>
+                <div class="game-rating">
+                  &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div>
+                <p class="game-description">
+                  Game Description.
+                </p>
+              </div>
+              <div class="game-review">
+                  <span class="game-score">9.4</span>
+                  <img class="game-image" src="gta5poster.jpg" alt="Grand Theft Auto">
+                  <h3 class="game-title">Grand Theft Auto</h3>
+                  <div class="game-rating">
+                    &#9733; &#9733; &#9733; &#9733; &#9733;
+                  </div>
+                  <p class="game-description">
+                    Game Description.
+                  </p>
+                </div>
+          </section> -->/
+    <!-- 
+          <section class="page-section review-page spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="review-item">
+                            <div class="review-cover set-bg" data-setbg="b1.jpg" style="background-image: url(b1.jpg);">
+                                <div class="score yellow">9.3</div>
+                            </div>
+                            <div class="review-text">
+                                <h4>Overwatch Halloween</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame. Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="review-item">
+                            <div class="review-cover set-bg" data-setbg="img/review/5.jpg" style="background-image: url(&quot;img/review/5.jpg&quot;);">
+                                <div class="score yellow">9.3</div>
+                            </div>
+                            <div class="review-text">
+                                <h4>Overwatch Halloween</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame. Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="review-item">
+                            <div class="review-cover set-bg" data-setbg="img/review/5.jpg" style="background-image: url(&quot;img/review/5.jpg&quot;);">
+                                <div class="score yellow">9.3</div>
+                            </div>
+                            <div class="review-text">
+                                <h4>Overwatch Halloween</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame. Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="review-item">
+                            <div class="review-cover set-bg" data-setbg="img/review/5.jpg" style="background-image: url(&quot;img/review/5.jpg&quot;);">
+                                <div class="score yellow">9.3</div>
+                            </div>
+                            <div class="review-text">
+                                <h4>Overwatch Halloween</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame. Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="review-item">
+                            <div class="review-cover set-bg" data-setbg="img/review/5.jpg" style="background-image: url(&quot;img/review/5.jpg&quot;);">
+                                <div class="score yellow">9.3</div>
+                            </div>
+                            <div class="review-text">
+                                <h4>Overwatch Halloween</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star is-fade"></i>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame. Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="text-center pt-4">
+                    <button class="site-btn btn-sm">Load More</button>
+                </div>
+            </div>
+        </section> -->
+
+    <section>
+      <div class="container">
+        <div class="item">
+          <div class="rating">9.3</div>
+          <a href="gta.html"><img src="gta/gta3.jpg" alt="GTA 5"></a>
+          <div class="title">GTA 5</div>
+          <div class="stars"></div>
+          <div class="description">
+            "Grand Theft Auto V" is an expansive open-world game, offering players a diverse range of activities in the
+            fictional city of Los Santos. With its immersive storytelling, vast multiplayer experience, and unparalleled
+            level of detail, it's a modern gaming masterpiece.</div>
+        </div>
+        <div class="item">
+          <div class="rating">9.3</div>
+          <a href="witcher.html"><img src="The witcher/witcher4.jpg" alt="The Witcher 3"></a>
+          <div class="title">The Witcher3: Wild Hunt</div>
+
+          <div class="stars"></div>
+          <div class="description">
+            "The Witcher 3: Wild Hunt" is an epic RPG masterpiece, featuring a richly detailed open world, gripping
+            storytelling, and morally complex choices. With its immersive world, captivating characters, and engaging
+            combat, it's hailed as one of the greatest games of all time.
+
+          </div>
+        </div>
+        <div class="item">
+          <div class="rating">9.3</div>
+          <a href="leagueoflegends.html"><img src="lol/lol4.jpg" alt="League Of Legends"></a>
+          <div class="title">League Of Legends</div>
+          <div class="stars"></div>
+          <div class="description">"League of Legends" is a globally acclaimed multiplayer online battle arena (MOBA)
+            game, known for its strategic depth, diverse roster of champions, and competitive gameplay. With millions of
+            players worldwide, it's a dominant force in the esports scene and a staple in the gaming community.</div>
+        </div>
+        <div class="item">
+          <div class="rating">9.3</div>
+          <a href="minecraft.html"><img src="minecraft/minecraft4.png" alt="Minecraft"></a>
+          <div class="title">Minecraft</div>
+          <div class="stars"></div>
+          <div class="description">"Minecraft" is a sandbox game that sparks creativity and exploration, allowing
+            players to build, survive, and adventure in procedurally generated worlds. With its limitless possibilities,
+            charming blocky graphics, and thriving community, it's become a cultural phenomenon loved by players of all
+            ages.</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="item">
+          <div class="rating">9.3</div>
+          <a href="fornite.html"> <img src="fortnite/fortnit3.jpeg" alt="Fornite"></a>
+          <div class="title">Fortnite</div>
+          <div class="stars"></div>
+          <div class="description">"Fortnite" is a popular battle royale game known for its fast-paced action, vibrant
+            visuals, and innovative building mechanics. With regular updates, crossover events, and a dedicated player
+            base, it has become a global gaming phenomenon, shaping pop culture and esports alike.
+          </div>
+        </div>
+        <div class="item">
+          <div class="rating">9.3</div>
+          <a href="apexlegend.html"><img src="Apex Legend/apex3.jpeg" alt="Grand Theft Auto"></a>
+          <div class="title">Apex Legends</div>
+          <div class="stars"></div>
+          <div class="description">"Apex Legends" is a fast-paced battle royale game that stands out with its diverse
+            roster of characters, called Legends, each with unique abilities. With its fluid gameplay, stunning visuals,
+            and intense squad-based action, it has captivated players worldwide and emerged as a major contender in the
+            battle royale genre.</div>
+        </div>
+        <div class="item">
+          <div class="rating">9.3</div>
+          <a href="gow.html"><img src="gow/gow1.jpg" alt="gow"></a>
+          <div class="title">God Of War</div>
+          <div class="stars"></div>
+          <div class="description">"God of War: Ragnarok" is one of the most anticipated upcoming games, promising to
+            continue the epic journey of Kratos and Atreus in Norse mythology. With its breathtaking visuals, immersive
+            storytelling, and intense action, it's poised to deliver another unforgettable gaming experience for fans of
+            the series.</div>
+        </div>
+        <div class="item">
+          <div class="rating">9.3</div>
+          <a href="reddead.html"><img src="reddead/reddead1.avif" alt="Anthem"></a>
+          <div class="title">Red Dead Redemption 2</div>
+          <div class="stars"></div>
+          <div class="description">"Red Dead Redemption 2" is a critically acclaimed open-world action-adventure game
+            set in the late 1800s, offering players a richly detailed depiction of the American Wild West. With its
+            immersive storytelling, vast open world, and realistic portrayal of life in the era, it has captivated
+            players and critics alike, cementing its place as one of the greatest video games of all time.</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="More">
+      <button>Read More</button>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="flex">
+      <small>Copyright &copy; 2023 All rights reserved | </small>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+
+        <li>
+          <a href="#">Games</a>
+        </li>
+
+        <li>
+          <a href="#">Blog</a>
+        </li>
+
+        <li>
+          <a href="#">Forums</a>
+        </li>
+
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

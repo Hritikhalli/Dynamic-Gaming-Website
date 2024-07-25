@@ -1,0 +1,396 @@
+body {
+    font-family: 'helvetica', 'sans-serif';
+    margin: 0;
+}
+
+/* start: global style rules */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+label,
+strong {
+    line-height: 2;
+    font-size: 0.85em;
+    font-weight: 300;
+}
+
+.flex {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+.badge {
+    padding: 9px 20px;
+    color: #eee;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.badge.new {
+    background-color: #FF205F;
+}
+
+.badge.strategy {
+    background-color: #4EAE60;
+}
+
+.badge.racing {
+    background-color: #694EAE;
+}
+
+.badge.rpg,
+.badge.adventure {
+    background-color: #40ABF5;
+}
+
+.badge.tournaments {
+    background-color: #FB6E10;
+}
+
+.badge.premium-tournament {
+    background-color: #FFB320;
+    color: #252525;
+}
+
+.shade {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+header {
+    background-color: #131313;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid #FFB320;
+}
+
+.hamburger-menu {
+    background-color: transparent;
+    border: 1px solid #FFB320;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-menu .strip {
+    display: block;
+    height: 1px;
+    background-color: #FFB320;
+    margin: 4px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 18px;
+}
+
+nav ul li a {
+    color: #eee;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #FFB320;
+}
+
+#login-register-button {
+    background-color: #FFB320;
+    color: #131313;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+/* start: latest news styles */
+#latest-news {
+    margin-bottom: 75px;
+}
+
+#latest-news .flex {
+    justify-content: flex-start;
+    max-width: 100%;
+    padding: 0;
+}
+
+#latest-news .flex h5 {
+    flex-basis: 25%;
+    background-color: #FFB320;
+    padding: 25px;
+    margin: 0;
+    text-align: right;
+    color: #eee;
+    font-size: 1.2em;
+}
+
+#latest-news-container {
+    background-color: #131313;
+    position: relative;
+    flex-basis: 75%;
+    padding: 25px;
+}
+
+#latest-news-container .badge {
+    margin-right: 20px;
+}
+
+#latest-news-container .latest-news-text {
+    color: #eee;
+}
+
+/* end: latest news styles */
+
+
+#hero-image {
+    background: url(background/fire.jpg) top center no-repeat;
+    background-size: cover;
+    margin: -90px 0 0;
+    height: 820px;
+}
+
+.hero-marketing-text {
+    max-width: 1200px;
+    margin: -30px auto 0;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+}
+
+
+
+.hero-marketing-text h1 {
+    color: #eee;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+
+.hero-marketing-text span {
+    color: #FFB320;
+}
+
+.hero-marketing-text h5 {
+    color: #eee;
+    font-size: 0.85em;
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 2;
+    margin-bottom: 2.5em;
+}
+
+.hero-marketing-text button {
+    background-color: #FFB320;
+    color: #131313;
+    border-radius: 25px;
+    padding: 15px 25px;
+    font-size: 0.85em;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+/*start of games*/
+/* .game-reviews {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.game-review {
+    flex-basis: 25%;
+    position: relative;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.game-score {
+    background-color: #FFD700;
+    color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -25px;
+}
+
+.game-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.game-rating {
+    color: #FFD700;
+
+}
+
+.game-description {
+    font-size: 1em;
+    color: #333;
+}
+
+.game-image {
+    width: 100%;
+    height: 400px;
+    border-bottom: 2px solid #ccc;
+}
+
+.game-image {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-bottom: 2px solid #ccc;
+}  */
+
+
+/*end of games*/
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+  }
+  .rating {
+    background-color: #FFD700;
+    color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -25px;
+}
+  .item {
+    flex-basis: calc(50% - 500px);
+    margin-bottom: 20px;
+  }
+  .item img {
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  }
+  .title, .stars, .description {
+    padding: 10px;
+  }
+
+  .stars:before {
+    content: "\2605 \2605 \2605 \2605 \2605"; /* Unicode star */
+    color: #ffd700; /* Gold color */
+  }
+  .description {
+    font-size: 0.8em;
+    color: #666;
+  }
+   @media (max-width: 600px) {
+    .item {
+      flex-basis: 100%;
+    }
+  } 
+
+.More button {
+    background-color: #FFB320;
+    color: #131313;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 0.85em;
+    font-weight: 600;
+    display: block;
+    margin: 20px auto;
+}
+
+footer {
+    background-color: #252525;
+    padding: 25px 0 20px;
+}
+
+footer small {
+    color: #ddd;
+    font-size: 0.9em;
+}
+
+footer small .footer-heart {
+    font-size: 16px;
+}
+
+footer small a {
+    color: #007BDC;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+footer ul li a {
+    color: #ddd;
+    font-size: 0.8em;
+}

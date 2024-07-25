@@ -1,0 +1,191 @@
+body{
+    font-family: 'helvatica','sans-serif';
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5{
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.6em;
+}
+
+h4{
+    font-size: 1.4em;
+}
+
+h5{
+    font-size: 1.2em;
+}
+
+a{
+    text-decoration: none;
+}
+
+p, label, strong{
+    line-height: 2;
+    font-size: 0.85em;
+    font-weight: 300;
+}
+
+.flex {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+.badge{
+    padding: 9px,20px;
+    color: #eee;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.badge.new{
+    background-color: #ff205f;
+}
+
+.badge.strategy{
+    background-color: #4eae60;
+}
+
+.badge.racing{
+    background-color: #694eae;
+}
+
+.badge.rpg,
+.badge.adventure{
+    background-color: #40a8f5;
+}
+
+.badge.tournaments{
+    background-color: #f86e10;
+}
+
+.badge.premium-tournament{
+    background-color: #ff8320;
+    color: #252525;
+}
+
+.shade{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 7);
+}
+
+header{
+    background-color: #131313;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid #ff8320;
+}
+
+.hamburger-menu{
+    background-color: transparent;
+    border: 1px solid #ff8320;
+    padding: 3px 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-menu .strip{
+    display: block;
+    background-color: #ff8320;
+    margin: 4px 0;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: #eee;
+    font-weight: 600;
+}
+
+nav ul li a:hover{
+    color: #ff8320;
+}
+
+#login-register-button{
+    background-color: #ff8320;
+    color: #131313;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+#hero-image{
+    background: url() top center no-repeat;
+    height: 820px;
+}
+
+.hero-marketing-text{
+    max-width: 1200px;
+    margin: -30px auto 0;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+}
+
+.hero-marketing-text h1{
+    color: #eee;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+
+.hero-marketing-text span{
+    color: #ff8320;
+}
+
+.hero-marketing-text h5{
+    color: #eee;
+    font-size: 0.85em;
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 2;
+    margin-bottom: 2.5em;
+}
+
+.hero-marketing-text button{
+    background-color: #ff8320;
+    color: #131313;
+    border-radius: 25px;
+    padding: 15px 25px;
+    font-size: 0.85em;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
